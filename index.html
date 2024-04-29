@@ -48,10 +48,22 @@ h1 {
         .slideshow img.active {
             opacity: 1;
         }
-        .slideshow img:hover {
-            transform: scale(1.1); /* Enlarge image on hover */
-            transition: transform 0.5s ease; /* Smooth transition */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
         }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.1); /* Enlarge image on hover */
+        }
+        
         nav {
             background-color: #444;
             color: #fff;
