@@ -16,11 +16,43 @@
     header {
     background-color: #333;
     color: #fff;
-    padding: 120px 0; /* Adjusted padding to increase header height */
+    padding: 140px 0; /* Adjusted padding to increase header height */
     text-align: center;
     position: relative;
     z-index: 1;
 }
+/* CSS styles for Services section */
+#services {
+    margin-bottom: 40px;
+}
+
+#services h3 {
+    margin-top: 20px;
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#services ul li {
+    position: relative;
+    margin-bottom: 8px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center content vertically */
+}
+
+#services ul li:before {
+    content: "\2022"; /* Bullet point */
+    margin-right: 10px; /* Space between bullet and content */
+    color: #333; /* Bullet point color */
+}
+
+
+
 
 h1 {
     margin: 0; /* Added to remove default margin */
@@ -59,9 +91,12 @@ h1 {
             height: auto;
             margin: 0 10px;
             transition: transform 0.3s ease;
+            float: left;
+            width: 25%;
+            padding: 5px 10px;
         }
         .image-container img:hover {
-            transform: scale(1.1); /* Enlarge image on hover */
+            transform: scale(1.3); /* Enlarge image on hover */
         }
         
         nav {
@@ -154,7 +189,7 @@ h1 {
         <h1>Crystal Cave Resources</h1>
         <div class="slideshow">
             <img class="active" src="https://media.licdn.com/dms/image/C4D12AQFJ19s8W_kGdw/article-cover_image-shrink_600_2000/0/1653338668541?e=2147483647&v=beta&t=VSrJZXsWH8gmRRbl107HHgC2SozpGfssaLBfVS3Lb-U" alt="Slideshow Image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmXd1I_-U4REHdJEBJLw1dLcnExU1Hh0IIhopxE39zQ&s" alt="Slideshow Image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRskBxCzoLLWaL52uHyMQ5c58GO3RkBuzlB4g&s" alt="Slideshow Image">
             <img src="https://global.micromine.com/wp-content/uploads/2016/10/mine-planning.jpg" alt="Slideshow Image">
             <img src="https://drtbebqlk4bjh.cloudfront.net/24xFD01/assets/7D5CB0561F0200006513474A000C23CE/7D5CB0561F0200006513474A000C23CE_processexperiences_img_1.webp" alt="Slideshow Image">
             <img src="https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_lp0e5f0dml62da1n635u7nq206/-FJPG" alt="Slideshow Image">
@@ -173,10 +208,14 @@ h1 {
     </nav>
     <section id="about">
         <h2>About Us</h2>
-        <p>Welcome to Crystal Cave Resources (Pty) Ltd. We are a private consultancy based in the North-West (Potchefstroom). Since established in 2022, Crystal Cave Resources (Pty) Ltd, stands as a premier consulting agency dedicated to bridging the expertise of scientists and engineers to deliver outstanding services within the geological and mining industries. Our firm takes pride in creating collaborative environments that harness the skills and proficiency of professionals, driving innovation and excellence in every project we undertake.</p>
+        <p>Welcome to Crystal Cave Resources (Pty) Ltd, your trusted partner in the world of mining and geological consultancy. Nestled in the heart of the North-West province, in the vibrant city of Potchefstroom, our company brings a fresh perspective and innovative solutions to the dynamic landscape of the mining industry.</p>
+        <p>Established in 2022, Crystal Cave Resources (Pty) Ltd has quickly risen to prominence as a premier consultancy, renowned for its unwavering commitment to excellence and dedication to client satisfaction. We pride ourselves on our ability to bridge the gap between scientific expertise and practical application, delivering unparalleled services tailored to meet the unique needs of each project.</p>
+        <p>At Crystal Cave Resources, we believe in the power of collaboration. Our team of skilled scientists, engineers, and industry professionals work hand-in-hand to unlock the full potential of every venture. By fostering a culture of teamwork and innovation, we strive to push the boundaries of what's possible, driving progress and prosperity in the mining sector.</p>
+        <p>From mineral exploration to geological modeling, from environmental assessments to mine planning, our comprehensive range of services covers every aspect of the mining lifecycle. Whether you're a large-scale mining operation or a burgeoning exploration company, we have the expertise and experience to help you achieve your goals.</p>
+        
         <div class="image-container">
             <img src="https://www.seequent.com/wp-content/uploads/Visible-Geology_Contours_Webhero2.png" alt="Image 1">
-            <img src="https://www.minxcon.co.za/wp-content/uploads/2018/11/geology-for-landing-page.jpg" alt="Image 2">
+            <img src="https://www.harmony.co.za/wp-content/uploads/2023/01/Eva-Copper-3.jpg" alt="Image 2">
             <!-- Add more images as needed -->
         </div>
     </section>
@@ -190,10 +229,19 @@ h1 {
             <li><strong>Strategic Investment in Mining Commodities:</strong> Our mission includes strategic investment in mining commodities by purchasing stocks. This proactive approach allows us to diversify our portfolio and actively participate in the growth and development of the mining sector, allowing the business to beat the prices of the competition upon operation.</li>
             <li><strong>Diverse Specialization in Respective Services Offered:</strong> The business strives on having qualified and specialized personnel in different fields of services, ensuring efficiency and diligence.</li>
         </ul>
+        <div class="image-container">
+            <img src="https://www.bluemining.co.za/wp/wp-content/uploads/2022/05/underground-mining-02.jpg" alt="Image 3">
+            <img src="https://www.africaoutlookmag.com/media/2022/11/zizwe-opencast-mining-1-1662721197.profileImage.2x-jpg-webp-webp.webp" alt="Image 4">
+            <!-- Add more images as needed -->
+        </div>
     </section>
     <section id="vision">
         <h2>Vision</h2>
-        <p>Our vision is to establish a premier consulting firm with a comprehensive approach to providing geo-services and mining solutions. At the core of our vision is a commitment to addressing complex challenges faced by mining and geological operations. We aim to pride ourselves in offering holistic solutions that encompass various facets of mining and geo-services, by leveraging a diverse network of (young) scientists and engineers. We aspire to set new standards in the industry for excellence and innovation.</p>
+        <p>At Crystal Cave Resources (Pty) Ltd, our vision extends far beyond simply being a consulting firm. We aspire to become the cornerstone of the mining and geological industries, setting new benchmarks for excellence, innovation, and sustainability.</p>
+        <p>Our vision is rooted in the belief that every challenge presents an opportunity for growth and improvement. We envision a future where complex problems in mining and geological operations are met with ingenious solutions that not only address immediate needs but also pave the way for long-term success.</p>
+        <p>Central to our vision is the idea of holistic solutions. We don't just offer services; we provide comprehensive strategies that consider every aspect of a project, from exploration to extraction, and beyond. By harnessing the collective expertise of our diverse team of scientists and engineers, we're able to develop innovative approaches that push the boundaries of what's possible.</p>
+        <p>As we strive towards our vision, we remain committed to our core values of excellence, integrity, and sustainability. We aim to lead by example, inspiring others in the industry to embrace change, pursue innovation, and uphold the highest standards of professionalism.</p>
+        <p>Together, we'll redefine the future of mining and geological consultancy, driving progress, and creating lasting value for our clients, our communities, and our planet.</p>
     </section>
     <section id="values">
         <h2>Values</h2>
@@ -207,6 +255,7 @@ h1 {
     </section>
     <section id="services">
         <h2>Services</h2>
+        
         <h3>Geological Services</h3>
         <ul>
             <li>Mineral Exploration: Planning, Execution, and Management</li>
@@ -217,6 +266,7 @@ h1 {
             <li>Core Logging and Core Sampling</li>
             <li>Drilling Management and Supervision</li>
         </ul>
+    
         <h3>Environmental Services</h3>
         <ul>
             <li>Environmental Impact Assessment (EIA)</li>
@@ -226,6 +276,7 @@ h1 {
             <li>Social and Community Development Plans</li>
             <li>Soil Characterization</li>
         </ul>
+    
         <h3>Mining Services</h3>
         <ul>
             <li>Metallurgy</li>
@@ -240,6 +291,7 @@ h1 {
             <li>Mine Planning and Screening</li>
             <li>Mine Closure - Mine Closure Strategy and Planning</li>
         </ul>
+    
         <h3>Cleaning Services</h3>
         <ul>
             <li>Industrial Areas</li>
@@ -248,9 +300,11 @@ h1 {
             <li>Mine Plants</li>
             <li>Company Vehicles</li>
         </ul>
-        <h3>Rehabilitation</h3>
-        <p>Rehabilitation is site-specific and is mostly needed for slimes dam, mining, and industrial areas. Process includes EIA scoping, soil testing, and execution. I think for now it is out of our scope but is something we can look forward to achieving as we grow***</p>
+    
+        <!--<h3>Rehabilitation</h3>
+        <p>Rehabilitation is site-specific and is mostly needed for slimes dam, mining, and industrial areas. Process includes EIA scoping, soil testing, and execution. I think for now it is out of our scope but is something we can look forward to achieving as we grow***</p> -->
     </section>
+    
     <section id="affiliations">
         <h2>Affiliation & Accreditations</h2>
         <ul>
@@ -259,6 +313,13 @@ h1 {
             <li>IAIA</li>
             <li>EAPASA</li>
         </ul>
+        <div class="image-container">
+            <img src="https://th.bing.com/th/id/OIP.PdHcv7jz37ArzuOocXdxXQHaDc?w=328&h=162&c=7&r=0&o=5&pid=1.7" alt="Image 5">
+            <img src="https://www.khabza.com/wp-content/uploads/2020/04/thumb_south_african_council_for_natural_scientific_professions_sacnasp.png" alt="Image 6">
+            <img src="https://th.bing.com/th/id/OIP.L5tfOTbWl1YLz2N51-ME3AHaCa?rs=1&pid=ImgDetMain" alt="Image 7">
+           
+            <!-- Add more images as needed -->
+        </div>
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
