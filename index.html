@@ -48,6 +48,22 @@ h1 {
         .slideshow img.active {
             opacity: 1;
         }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.1); /* Enlarge image on hover */
+        }
+        
         nav {
             background-color: #444;
             color: #fff;
@@ -158,6 +174,11 @@ h1 {
     <section id="about">
         <h2>About Us</h2>
         <p>Welcome to Crystal Cave Resources (Pty) Ltd. We are a private consultancy based in the North-West (Potchefstroom). Since established in 2022, Crystal Cave Resources (Pty) Ltd, stands as a premier consulting agency dedicated to bridging the expertise of scientists and engineers to deliver outstanding services within the geological and mining industries. Our firm takes pride in creating collaborative environments that harness the skills and proficiency of professionals, driving innovation and excellence in every project we undertake.</p>
+        <div class="image-container">
+            <img src="https://www.seequent.com/wp-content/uploads/Visible-Geology_Contours_Webhero2.png" alt="Image 1">
+            <img src="https://www.minxcon.co.za/wp-content/uploads/2018/11/geology-for-landing-page.jpg" alt="Image 2">
+            <!-- Add more images as needed -->
+        </div>
     </section>
     <section id="mission">
         <h2>Mission</h2>
