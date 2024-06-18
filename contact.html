@@ -3,29 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Crystal Cave Resources</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="sectors.html">Sectors</a>
-        <a href="company_structure.html">Company Structure</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you would like to get in touch, please contact us using the information below:</p>
-        <address>
-            <strong>Crystal Cave Resources (Pty) Ltd</strong><br>
-            <a href="mailto:info@crystalcaveresources.co.za">info@crystalcaveresources.co.za</a><br>
-            <!-- Add additional contact information here -->
-        </address>
-    </section>
+    <header>
+        <div class="container">
+            <h1>Crystal Cave Resources</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="sectors.html"><i class="fas fa-industry"></i> Sectors</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contact" class="container">
+            <h2>Our Locations</h2>
+            <div class="branch">
+                <h3>Klerksdorp Branch</h3>
+                <p>2306 MOTSOENYANE STREET, KLERKSDORP, NORTH WEST, 2550</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67729.15070629252!2d26.806981241550144!3d-26.85346672159066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e968dc730ba1879%3A0x4625198b446d55c1!2s2306%20Motsoenyane%20St%2C%20Khuma%2C%202562!5e0!3m2!1sen!2sza!4v1718643786576!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="branch">
+                <h3>Rustenberg Branch</h3>
+                <p>1438 KHUMALO STREET, RUSTENBURG, NORTH WEST, 0299</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162788.08826808943!2d27.103392778650264!3d-25.633394491853156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebe0a55a424f5bb%3A0xe5818351fad92e7!2s1438%20Khumalo%20St%2C%20Tlhabane%2C%20Rustenburg%2C%200309!5e0!3m2!1sen!2sza!4v1718644028552!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="branch">
+                <h3>Northern Cape Branch</h3>
+                <p>HOUSE NO E20B, KURUMAN, NORTHERN CAPE, 8460</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113302.71496465283!2d23.27172323709961!3d-27.447152094956994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9efed9a1f66941%3A0x47efd3a6e90ae0a8!2sKuruman%2C%208460!5e0!3m2!1sen!2sza!4v1718644209042!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@crystalcaveresources.com">info@crystalcaveresources.com</a></p>
+            <p>Phone 1: +27 (73) 489 9672</p>
+            <p>Phone 2: +27 (84) 974 0527</p>
+            <p>Phone 3: +27 (66) 211 1834</p>
+            <p>Monday-Friday : 09:00 - 17:00</p>
+            <div class="contact-form">
+                
+                <form action="https://formspree.io/f/xbjnwwwn" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="footer-section">
+                <h2>Follow Us</h2>
+                <p><a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+            </div>
+        </section>
+    </main>
     <footer>
-        &copy; 2024 Crystal Cave Resources
+        <div class="container">
+            &copy; 2024 Crystal Cave Resources
+        </div>
     </footer>
 </body>
 </html>
