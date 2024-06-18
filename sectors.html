@@ -5,32 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sectors - Crystal Cave Resources</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="company_structure.html">Company Structure</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section id="sectors">
-        <h2>Sectors</h2>
-        <nav>
-            <a href="#sector1">Sector 1</a>
-            <a href="#sector2">Sector 2</a>
-        </nav>
-        <section id="sector1">
-            <h3>Sector 1</h3>
-            <p>Details about Sector 1...</p>
+    <header>
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Crystal Cave Resources</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="sectors.html"><i class="fas fa-industry"></i> Sectors</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="sectors">
+            <h2>Sectors</h2>
+            <div class="tabs">
+                <button class="tab" onclick="showTab('mainSector', event)">Main Sector</button>
+                <button class="tab" onclick="showTab('coreSector', event)">Core Sector</button>
+            </div>
+            <div id="mainSector" class="tab-content">
+                <h3>Main Sector</h3>
+                <p>Our Main Sector focuses on providing comprehensive mining consulting services, from initial exploration to mine closure. We leverage our expertise to offer strategic insights and practical solutions that help our clients maximize their mining operations' efficiency and profitability.</p>
+                <h4>Services Offered</h4>
+                <ul>
+                    <li><strong>Exploration and Feasibility Studies:</strong> We conduct thorough geological surveys and feasibility studies to determine the viability of mining projects. Our team uses state-of-the-art technology and methodologies to ensure accurate results.</li>
+                    <li><strong>Mine Design and Planning:</strong> Our experts design and plan mines to optimize resource extraction while ensuring safety and regulatory compliance. We focus on creating sustainable and cost-effective mining plans.</li>
+                    <li><strong>Environmental Impact Assessments:</strong> We provide detailed environmental impact assessments to help our clients understand and mitigate the environmental effects of their mining activities. Our goal is to promote sustainable mining practices.</li>
+                    <li><strong>Regulatory Compliance and Permitting:</strong> Navigating the complex regulatory landscape can be challenging. We assist our clients in obtaining necessary permits and ensuring ongoing compliance with local and international regulations.</li>
+                    <li><strong>Project Management:</strong> From start to finish, we manage mining projects efficiently, ensuring they are completed on time and within budget. Our project management services include risk management, cost control, and quality assurance.</li>
+                </ul>
+               
+            </div>
+            <div id="coreSector" class="tab-content">
+                <h3>Core Sector</h3>
+                <p>Our Core Sector specializes in providing targeted consulting services to enhance the operational performance of established mines. We focus on improving productivity, ensuring safety, and adopting innovative technologies to stay ahead in the competitive mining industry.</p>
+                <h4>Services Offered</h4>
+                <ul>
+                    <li><strong>Operational Efficiency Optimization:</strong> We analyze current mining operations and implement strategies to improve efficiency, reduce costs, and increase output. Our team identifies bottlenecks and provides practical solutions to enhance productivity.</li>
+                    <li><strong>Safety Management Systems:</strong> Safety is paramount in mining operations. We develop and implement comprehensive safety management systems to protect workers and assets. Our services include safety training, audits, and incident investigation.</li>
+                    <li><strong>Technology Integration and Automation:</strong> We help our clients adopt the latest mining technologies, including automation and digital solutions. These advancements improve operational efficiency, accuracy, and safety.</li>
+                    <li><strong>Resource Estimation and Reporting:</strong> Accurate resource estimation is crucial for mining success. We provide precise resource estimation and reporting services, ensuring our clients have reliable data to make informed decisions.</li>
+                    <li><strong>Sustainability and Community Engagement:</strong> We promote sustainable mining practices and work closely with local communities to ensure that mining projects have a positive impact. Our services include sustainability reporting and community engagement strategies.</li>
+                </ul>
+             
+            </div>
         </section>
-        <section id="sector2">
-            <h3>Sector 2</h3>
-            <p>Details about Sector 2...</p>
-        </section>
-    </section>
+    </main>
     <footer>
-        &copy; 2024 Crystal Cave Resources
+        <div class="container">
+            <div class="footer-section">
+                <h2>Contact Us</h2>
+                <p>Email: info@crystalcaveresources.com</p>
+                <p>Phone: +1-800-123-4567</p>
+                <p>Address: 123 Mining Lane, Industry City, Country</p>
+            </div>
+           
+            <div class="footer-bottom">
+                &copy; 2024 Crystal Cave Resources. All Rights Reserved.
+            </div>
+        </div>
     </footer>
+    <script>
+        // JavaScript function to handle tab switching
+        function showTab(tabId, event) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+            // Remove 'active' class from all tabs
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            // Show the selected tab content
+            document.getElementById(tabId).classList.add('active');
+            // Add 'active' class to the selected tab
+            event.target.classList.add('active');
+        }
+
+        // Initialize the first tab as active
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.tab').click();
+        });
+    </script>
 </body>
 </html>
