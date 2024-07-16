@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #1c2833;
+    background: #23457b; /* Slightly lighter blue */
     color: white;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -26,7 +26,8 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
-    background: #1a252f;
+    background: 
+    #23457b; /* Slightly lighter blue */
 }
 
 nav ul {
@@ -49,7 +50,7 @@ nav a {
 
 nav a:hover {
     color: #ffd700;
-    background: #1c2833;
+    background: #23457b; /* Adjusted hover color */
 }
 
 main .container {
@@ -60,7 +61,7 @@ main .container {
 }
 
 footer {
-    background: #1c2833;
+    background: #23457b; /* Slightly lighter blue */
     color: white;
     padding: 10px 0;
     margin-top: 20px;
@@ -98,12 +99,9 @@ footer p {
 .slideshow {
     position: relative;
     max-width: 100%;
-    
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 5px;
-   
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -123,10 +121,8 @@ footer p {
 
 /* Additional CSS to initially hide all sector sections */
 section[id^="sector"] {
-   
 }
 
-/* Flexbox for Mission and Vision sections */
 .flex-container {
     display: flex;
     justify-content: space-around;
@@ -138,7 +134,7 @@ section[id^="sector"] {
     margin: 0 1em;
 }
 
- #values img {
+#values img {
     width: 60%;
     height: 60;
     margin-bottom: 1em;
@@ -159,7 +155,6 @@ section[id^="sector"] {
     margin-top: 2em;
 }
 
-/* Media queries for responsive design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.8em;
@@ -184,71 +179,6 @@ section[id^="sector"] {
     #mission, #vision {
         margin: 1em 0;
     }
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background: #1c2833;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    margin: 0;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background: #1a252f;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    transition: color 0.3s, background 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    color: #ffd700;
-    background: #1c2833;
-}
-
-main {
-    padding: 20px 0;
 }
 
 #contact h2 {
@@ -300,7 +230,7 @@ main {
 }
 
 .contact-form input[type="submit"] {
-    background: #1c2833;
+    background: #23457b; /* Slightly lighter blue */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -312,118 +242,7 @@ main {
 
 .contact-form input[type="submit"]:hover {
     background: #ffd700;
-    color: #1c2833;
-}
-
-footer {
-    background: #1c2833;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-footer .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: #1c2833;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 10;
-}
-
-header h1 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background: #1a252f;
-}
-
-nav ul {
-    display: flex;
-    padding: 15px 0;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    transition: color 0.3s, background 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    color: #ffd700;
-    background: #1c2833;
-}
-
-main .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    
-}
-
-footer {
-    background: #1c2833;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-.footer-section {
-    margin-bottom: 10px;
-}
-
-.footer-section h2 {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 5px;
-}
-
-.footer-section p, .footer-section ul, .footer-section li, .footer-section a {
-    color: #d5d5d5;
-}
-
-.footer-section a:hover {
-    color: #ffd700;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid #2c3e50;
-    margin-top: 10px;
-}
-
-footer p {
-    margin: 0;
+    color: #23457b; /* Slightly lighter blue */
 }
 
 #sectors {
@@ -439,7 +258,11 @@ footer p {
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
-    color: #1c2833;
+    color:     #000000; /* Slightly lighter blue #23457b*/
+}
+#sectors h3
+{
+    color: #000;
 }
 
 .tabs {
@@ -449,7 +272,7 @@ footer p {
 }
 
 .tab {
-    background: #1c2833;
+    background: #23457b; /* Slightly lighter blue */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -462,7 +285,7 @@ footer p {
 
 .tab:hover, .tab.active {
     background: #ffd700;
-    color: #1c2833;
+    color: #23457b; /* Slightly lighter blue #1c2833; */
 }
 
 .tab-content {
@@ -477,7 +300,7 @@ footer p {
 .tab-content h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8em;
-    color: #1c2833;
+    color: #23457b; /* Slightly lighter blue */
     margin-bottom: 15px;
 }
 
@@ -496,105 +319,10 @@ footer p {
     background: #f5f5f5;
     margin: 10px 0;
     padding: 10px;
-    border-left: 5px solid #1c2833;
+    border-left: 5px solid 
+    #23457b; /* Slightly lighter blue */
 }
 
 .tab-content strong {
     color: #1a252f;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: #1c2833;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 10;
-}
-
-header h1 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background: #1a252f;
-}
-
-nav ul {
-    display: flex;
-    padding: 15px 0;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    transition: color 0.3s, background 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    color: #ffd700;
-    background: #1c2833;
-}
-
-main .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-footer {
-    background: #1c2833;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-.footer-section {
-    margin-bottom: 10px;
-}
-
-.footer-section h2 {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 5px;
-}
-
-.footer-section p, .footer-section ul, .footer-section li, .footer-section a {
-    color: #d5d5d5;
-}
-
-.footer-section a:hover {
-    color: #ffd700;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid #2c3e50;
-    margin-top: 10px;
-}
-
-footer p {
-    margin: 0;
-}
-
